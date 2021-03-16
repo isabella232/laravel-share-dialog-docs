@@ -1,15 +1,9 @@
 ---
-id: gettingStarted
-title: Getting Started
-sidebar_label: Getting Started
-slug: /
+id: installation
+title: Installation
+sidebar_label: Installation
+slug: /installation
 ---
-
-## Introduction
-
-**ShareDialog** is a composer package for Laravel projects which allows other users to read or write your project's entities.
-
-It helps you manage roles and permissions in an app by using Eloquent Models. You can assign read or write permissions to a user and remove permissions as required.
 
 ## **Prerequisites**
 

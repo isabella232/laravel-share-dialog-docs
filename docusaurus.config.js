@@ -84,7 +84,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "",
+          editUrl: "https://github.com/formstjs/formst-docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

@@ -9,13 +9,7 @@
 
 module.exports = {
   someSidebar: {
-    Basics: ["gettingStarted", "Usage"],
-    Customizations: [
-      "modelPath",
-      "middleware",
-      "restriction",
-      "listeners",
-      "searchable",
-    ],
+    "Getting Started": ["idea", "installation", "Usage"],
+    Customizations: ["basic", "listeners", "searchable"],
   },
 };
