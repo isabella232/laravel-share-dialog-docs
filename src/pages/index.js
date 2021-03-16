@@ -191,7 +191,7 @@ const SVGs = {
       </g>
     </svg>
   ),
-  "High-performance": (
+  Restrictions: (
     <svg
       id="high"
       xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@ const SVGs = {
       />
     </svg>
   ),
-  "Out of the box": (
+  Notifications: (
     <svg
       id="outofbox"
       xmlns="http://www.w3.org/2000/svg"
@@ -307,7 +307,7 @@ const SVGs = {
       />
     </svg>
   ),
-  "Easy on the bundle": (
+  Searchable: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="96"
@@ -461,20 +461,20 @@ const SVGs = {
 
 const features = [
   {
-    title: "High-performance",
-    description: <> MST-based, making it fast and powerful</>,
+    title: "Restrictions",
+    description: <> Restrict only certain entities to be shareable</>,
   },
   {
     title: "Middleware",
-    description: <>Use middleware to intercept and manipulate input</>,
+    description: <>Add your own custom middlewares</>,
   },
   {
-    title: "Out of the box",
-    description: <>Get various validations for fields right out of the box</>,
+    title: "Notifications",
+    description: <>Send Notifications when User's access gets changed</>,
   },
   {
-    title: "Easy on the bundle",
-    description: <>1.7KB, that's all</>,
+    title: "Searchable",
+    description: <>Provide your own list of users based on search query</>,
   },
 ];
 
@@ -604,12 +604,6 @@ function Home() {
   const [contributors, setContributors] = React.useState([]);
 
   function fetchOtherContributors() {
-    let vidhi = {
-      id: 47877976,
-      login: "vidhi499",
-      avatar_url: "https://avatars.githubusercontent.com/u/47877976?v=4",
-      html_url: "https://github.com/vidhi499",
-    };
     let sanket = {
       id: 1733433,
       login: "sanketsahu",
@@ -622,15 +616,15 @@ function Home() {
       avatar_url: "https://avatars.githubusercontent.com/u/19682624?v=4",
       html_url: "https://github.com/gauravguha",
     };
-    return [sanket, vidhi, gaurav];
+    return [sanket, gaurav];
   }
 
   function fetchContributorsData() {
     let websiteContributors = fetch(
-      "https://api.github.com/repos/geekyants/formst-website/contributors"
+      "https://api.github.com/repos/geekyants/laravel-inertia-share-dialog/contributors"
     );
     let mainRepoContributors = fetch(
-      "https://api.github.com/repos/formstjs/formst/contributors"
+      "https://api.github.com/repos/geekyants/laravel-inertia-share-dialog/contributors"
     );
 
     Promise.all([websiteContributors, mainRepoContributors])
@@ -673,7 +667,7 @@ function Home() {
   }
 
   React.useEffect(() => {
-    fetch("https://api.github.com/repos/formstjs/formst")
+    fetch("https://github.com/GeekyAnts/laravel-inertia-share-dialog")
       .then((response) => response.json())
       .then((data) => setStarCount(data.stargazers_count));
 
@@ -715,20 +709,13 @@ function Home() {
           <div className="row">
             <div className="col col--7 ">
               <h1 className="hero__title hero__title--left">
-                Model-driven Form Library <br />
-                for React
+                Share Functionality
+                <br />
+                for Laravel Apps
               </h1>
               <p className="hero__subtitle hero__subtitle--left">
-                Based on{" "}
-                <a
-                  href="https://mobx-state-tree.js.org/intro/welcome"
-                  target="__blank"
-                  className="text-white hover-text-white"
-                  style={{ fontWeight: 700 }}
-                >
-                  MobX-State-Tree
-                </a>{" "}
-                to validate <br />& structure forms in React
+                An open source library which enables you to allows other users
+                to read or write your project's entities.
               </p>
               <div className={styles.buttons}>
                 <Link
@@ -742,7 +729,7 @@ function Home() {
                 </Link>
 
                 <a
-                  href="https://github.com/formstjs/formst"
+                  href="https://github.com/GeekyAnts/laravel-inertia-share-dialog"
                   target="_blank"
                   style={{ textDecorationLine: "none" }}
                 >
@@ -769,7 +756,7 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <h1 className="hero__title  text--center feature_section_padding">
-                Why Formst?
+                Why ShareDialog?
               </h1>
               <div className="row">
                 {features.map((props, idx) => (
@@ -781,7 +768,7 @@ function Home() {
         )}
         <section className={styles.exampleSection}>
           <div className="container text--center">
-            <div className={styles.exampleWrapper}>
+            {/* <div className={styles.exampleWrapper}>
               <h3 className="hero__title">Login Form Example</h3>
               <div className={styles.exampleDescription}>
                 <p>
@@ -791,36 +778,9 @@ function Home() {
                   values.
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            <iframe
-              src="https://codesandbox.io/embed/formst-demo-ffw8v?fontsize=14&hidenavigation=1&theme=dark"
-              width="100%"
-              height="600"
-              frameBorder="0"
-              title="formst-demo"
-              allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-              sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-            ></iframe>
-          </div>
-        </section>
-        <section className={styles.talkSection}>
-          <div className="container text--center">
-            <div className={styles.exampleWrapper}>
-              <h3 className="hero__title">
-                Watch the talk at React Native Bangalore
-              </h3>
-            </div>
-
-            <iframe
-              width="62%"
-              height="420"
-              className={styles.talkVideo}
-              src="https://www.youtube.com/embed/339nm9QyHWc?start=5119"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <img src="img/share-dialog.gif"></img>
           </div>
         </section>
         <section className={styles.products}>

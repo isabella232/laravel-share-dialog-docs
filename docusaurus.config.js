@@ -1,7 +1,7 @@
 module.exports = {
   title: "Formst",
   tagline: "Model-driven Form Library for React",
-  url: "https://formstjs.github.io",
+  url: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -11,7 +11,7 @@ module.exports = {
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
-      title: "Formst",
+      title: "Share Dialog",
       logo: {
         alt: "Formst Logo",
         src: "/img/favicon-light.png",
@@ -25,7 +25,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/formstjs/formst",
+          href: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
           label: "GitHub",
           target: "_blank",
           position: "right",
@@ -55,7 +55,7 @@ module.exports = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/formstjs/formst",
+              href: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
             },
             {
               label: "Contribution Guidelines",
