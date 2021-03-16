@@ -9,13 +9,13 @@
 
 module.exports = {
   someSidebar: {
-    Basics: ["idea", "gettingStarted", "validation", "nested", "middleware"],
-    APIs: [
-      "createFormModel",
-      "formst",
-      "field",
-      "errorMessage",
-      "defineValidators",
+    Basics: ["gettingStarted", "Usage"],
+    Customizations: [
+      "modelPath",
+      "middleware",
+      "restriction",
+      "listeners",
+      "searchable",
     ],
   },
 };

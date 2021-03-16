@@ -46,7 +46,7 @@ module.exports = {
           items: [
             {
               label: "Getting Started",
-              to: "docs/gettingStarted",
+              to: "docs/",
             },
           ],
         },
@@ -84,7 +84,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/formstjs/formst-docs",
+          editUrl: "",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
