@@ -82,7 +82,7 @@ php artisan vendor:publish --tag="bouncer.migrations"
    composer require geekyants/share-dialog
    ```
 
-2. Run this command to move the share-dialog's config file to your project's config folder:
+2. Run this command to move the share-dialog config file to your project's config folder:
 
    ```jsx
    php artisan vendor:publish  --tag="config"

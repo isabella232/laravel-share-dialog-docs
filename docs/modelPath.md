@@ -5,7 +5,7 @@ sidebar_label: Model Path
 slug: /modelPath
 ---
 
-If your model files are present in some folder other than `"App\Models\\"`, you can set the `modelPath` to the path of that folder:
+If your model files are present in some folder other than `"App\Models\\"`, you can set the `modelPath` to the path of that folder in the share-dialog.php file:
 
 ```
  "modelPath" => "App\Models\\"
