@@ -768,18 +768,6 @@ function Home() {
         )}
         <section className={styles.exampleSection}>
           <div className="container text--center">
-            {/* <div className={styles.exampleWrapper}>
-              <h3 className="hero__title">Login Form Example</h3>
-              <div className={styles.exampleDescription}>
-                <p>
-                  Let's take a quick look at Formst in action. This is a simple
-                  login form with two inputs that are validated on submission.
-                  It can also display specific error messages for invalid input
-                  values.
-                </p>
-              </div>
-            </div> */}
-
             <img src="img/share-dialog.gif"></img>
           </div>
         </section>

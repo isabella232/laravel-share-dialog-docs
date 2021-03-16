@@ -82,13 +82,13 @@ php artisan vendor:publish --tag="bouncer.migrations"
    composer require geekyants/share-dialog
    ```
 
-2. Run this command to move the config file to your project's config folder:
+2. Run this command to move the share-dialog's config file to your project's config folder:
 
    ```jsx
    php artisan vendor:publish  --tag="config"
    ```
 
-3. Scaffold the vue components present in the share-dialog package as shown below:
+3. Scaffold the vue components present in the share-dialog package into your project:
 
    ```jsx
    php artisan ui share-dialog
@@ -96,7 +96,7 @@ php artisan vendor:publish --tag="bouncer.migrations"
 
    A share-dialog folder containing Vue.js components will be created in your resources directory. You can now easily customise your share-dialog's Vuejs components 🚀
 
-4. Execute this command to migrate Bouncer migrations and the new_users_share_dialog table:
+4. Execute this command to migrate Bouncer migrations and the new_users_share_dialog table present in the package:
 
    ```jsx
    php artisan migrate
