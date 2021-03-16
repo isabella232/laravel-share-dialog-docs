@@ -1,0 +1,194 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #534ce9;
+  --ifm-color-primary-dark: #4b44d2;
+  --ifm-color-primary-darker: #423dba;
+  --ifm-color-primary-darkest: #3a35a3;
+  --ifm-color-primary-light: #645eeb;
+  --ifm-color-primary-lighter: #7570ed;
+  --ifm-color-primary-lightest: #8782f0;
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-link-color: white;
+  --ifm-navbar-link-hover-color: darkgray;
+  --trial-color: #9d99ff;
+  /* --ifm-navbar-padding-vertical */
+  /* --ifm-navbar-padding-horizontal: 10rem; */
+  --svg-fill-color: #21232a;
+  --ifm-heading-line-height: 1.35;
+  --ifm-footer-link-hover-color: #c5c2ff;
+  --svg-intro-background-color: #fbfbfb;
+  --svg-intro-fill-color: #534ce9;
+}
+
+.navbar-sidebar__brand {
+  background-color: var(--ifm-color-primary);
+}
+.navbar__toggle {
+  color: white;
+}
+
+.button.button--secondary.button--outline:not(.button--active):not(:hover) {
+  --ifm-font-color-base: #fff;
+}
+
+.navbar {
+  background-color: var(--ifm-color-primary);
+  box-shadow: none;
+}
+
+.navbar {
+  --ifm-link-hover-color: #fff;
+  --ifm-navbar-link-color: #fff;
+}
+
+.navbar__inner {
+  --ifm-navbar-link-hover-color: #fff;
+}
+
+.hero--primary {
+  --ifm-hero-text-color: #fff;
+}
+
+.navbar__brand:hover {
+  color: var(--ifm-link-hover-color);
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.hero__subtitle--left,
+.hero__title--left {
+  text-align: left;
+}
+
+/* Dark theme overrides */
+html[data-theme="dark"] {
+  --ifm-color-primary: #21232a;
+  --ifm-heading-color: #fff;
+  --ifm-font-color-base: #fff;
+  --ifm-menu-color-active: var(--trial-color);
+  --ifm-link-color: var(--trial-color);
+  --ifm-tabs-color-active: var(--trial-color);
+  --svg-fill-color: #534ce9;
+  --ifm-footer-link-hover-color: #bcc7ef;
+  --svg-intro-background-color: #534ce9;
+  --svg-intro-fill-color: #fbfbfb;
+}
+
+html[data-theme="dark"] .admonition-heading {
+  --ifm-heading-color: #000;
+}
+html[data-theme="dark"] .product {
+  color: white;
+}
+.product {
+  color: black;
+}
+html[data-theme="dark"] .table-of-contents__link {
+  --ifm-color-primary: var(--trial-color);
+}
+
+html[data-theme="dark"] .navbar__link:hover,
+html[data-theme="dark"] .navbar__link--active {
+  color: var(--trial-color);
+}
+
+.react-toggle-track {
+  background-color: #000 !important;
+}
+
+.navbar__inner {
+  padding: 0 1rem;
+}
+
+.feature-icons {
+  fill: var(--svg-fill-color);
+}
+
+.feature-icons--stroke {
+  stroke: var(--svg-fill-color);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.hover-text-white:hover {
+  color: #fff;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 996px) {
+  .hero-image {
+    margin-top: 2rem;
+  }
+}
+
+.hero__title {
+  font-size: 2.8rem;
+}
+.intro_image {
+  height: 22rem;
+  object-fit: contain;
+}
+.feature_section_padding {
+  padding-bottom: 4rem !important;
+}
+@media screen and (max-width: 966px) {
+  .hero__title {
+    font-size: 1.7rem;
+  }
+  .intro_image {
+    height: 14rem;
+  }
+  .feature_section_padding {
+    padding-bottom: 1rem !important;
+  }
+  .githubStarsText {
+    font-size: 18px;
+  }
+  .githubStarsImage {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+.githubStarsConatiner {
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.githubStarsImage {
+  width: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.githubStarsText {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 3px;
+}
