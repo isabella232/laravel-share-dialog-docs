@@ -6,6 +6,8 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import Head from "@docusaurus/Head";
+import CookieConsent from "react-cookie-consent";
+import { useHistory } from "react-router-dom";
 
 const SVGs = {
   NativeBase: (
@@ -36,14 +38,14 @@ const SVGs = {
                   id="Path-2"
                   d="M0,31.548,54.61,0l54.166,31.646V94.3L54.61,126.29,0,94.2Z"
                   fill="#2ec990"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 />
                 <path
                   id="Path-5"
                   d="M200.289,174l44.843,24.518V225.4l-24.049,14.208L181,214.773,194.024,174Z"
                   transform="translate(-136.355 -131.081)"
                   fill="#1a8f64"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 />
                 <path
                   id="Path-2-Copy"
@@ -51,15 +53,15 @@ const SVGs = {
                   transform="translate(-20.717 -25.388)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="5"
-                  fill-rule="evenodd"
+                  strokeWidth="5"
+                  fillRule="evenodd"
                 />
                 <path
                   id="Path-3"
                   d="M79,225.984l26.121,12.876L113.779,214l-11.667-4Z"
                   transform="translate(-59.514 -158.201)"
                   fill="#1a8f64"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 />
                 <path
                   id="_x3C__x2F__x3E_"
@@ -87,7 +89,7 @@ const SVGs = {
         id="Rectangle"
         d="M11.616,0H98.524A11.623,11.623,0,0,1,110.14,11.616V98.524A11.623,11.623,0,0,1,98.524,110.14H11.616A11.623,11.623,0,0,1,0,98.524V11.616A11.623,11.623,0,0,1,11.616,0Z"
         fill="#78468e"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       />
       <path
         id="Path_1"
@@ -596,9 +598,9 @@ const introSvg = (
     </g>
   </svg>
 );
-
 function Home() {
   const context = useDocusaurusContext();
+  let history = useHistory();
   const { siteConfig = {} } = context;
   const [starCount, setStarCount] = React.useState(0);
   const [contributors, setContributors] = React.useState([]);
@@ -667,10 +669,9 @@ function Home() {
   }
 
   React.useEffect(() => {
-    fetch("https://github.com/GeekyAnts/laravel-inertia-share-dialog")
+    fetch("https://api.github.com/repos/GeekyAnts/laravel-inertia-share-dialog")
       .then((response) => response.json())
       .then((data) => setStarCount(data.stargazers_count));
-
     fetchContributorsData();
   }, []);
   return (
@@ -807,6 +808,21 @@ function Home() {
             </ul>
           </div>
         </section>
+
+        <CookieConsent
+          children="passi"
+          buttonText="I understand"
+          enableDeclineButton
+          setDeclineCookie={false}
+          declineButtonText="Learn More"
+          onDecline={() => {
+            history.push("/cookie-policy");
+          }}
+        >
+          We use our own and third-party cookies and other tracking
+          technologies, by continuing to browse the website, you accept our use
+          of cookies and tracking technologiesss.
+        </CookieConsent>
       </main>
     </Layout>
   );

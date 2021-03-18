@@ -48,6 +48,10 @@ module.exports = {
               label: "Getting Started",
               to: "docs/",
             },
+            {
+              label: "Customizations",
+              to: "docs/basic",
+            },
           ],
         },
         {
@@ -76,8 +80,7 @@ module.exports = {
             },
             {
               label: "Contribution Guidelines",
-              href:
-                "https://github.com/formstjs/formst/blob/master/CONTRIBUTING.md",
+              href: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
             },
           ],
         },
@@ -92,6 +95,7 @@ module.exports = {
           ],
         },
       ],
+      copyright: `Copyright © ${new Date().getFullYear()} Share-Dialog`,
     },
   },
   presets: [
