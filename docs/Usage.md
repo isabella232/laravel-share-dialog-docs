@@ -5,7 +5,7 @@ sidebar_label: Usage
 slug: /Usage
 ---
 
-You must define a relation user for the entity model that you want to share. The relation should return the instance of the user who created it.
+You must define a relation `user` for the entity model that you want to share. The relation should return the instance of the user who created it.
 
 To share your entity with other users visit:
 
@@ -13,7 +13,7 @@ To share your entity with other users visit:
 {APP_URL}/share-dialog/{entity_name}/{entity_id}
 ```
 
-For example, to open a share dialog for your project model with id 123, run the following:
+For example, to open a share dialog for your project model with id 123, visit:
 
 ```
 {APP_URL}/share-dialog/projects/123

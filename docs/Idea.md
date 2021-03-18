@@ -14,7 +14,7 @@ It helps you manage roles and permissions in an app by using Eloquent Models. Yo
 ## Motivation
 
 It becomes very time consuming to add share functionality in your laravel projects and therefore the development process gets disturbed. <br/>
-This package aims to solve the problem and enables you to share your projects' entities with other users with minimal effort.
+This package aims to solve the problem and enables you to share your project's entities with other users with minimal effort.
 
 ## Philosophy
 

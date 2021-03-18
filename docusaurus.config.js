@@ -1,13 +1,13 @@
 module.exports = {
-  title: "Formst",
-  tagline: "Model-driven Form Library for React",
+  title: "ShareDialog",
+  tagline: "Share Functionality for Laravel Apps",
   url: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon-light.png",
   organizationName: "geekyants", // Usually your GitHub org/user name.
-  projectName: "formst", // Usually your repo name.
+  projectName: "ShareDialog", // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
@@ -47,6 +47,23 @@ module.exports = {
             {
               label: "Getting Started",
               to: "docs/",
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "Twitter",
+              href: "https://geekyants.com/",
+            },
+            {
+              label: "StackOverflow",
+              href: "https://geekyants.com/",
+            },
+            {
+              label: "Discord",
+              href: "https://geekyants.com/",
             },
           ],
         },

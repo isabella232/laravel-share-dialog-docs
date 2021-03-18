@@ -675,8 +675,8 @@ function Home() {
   }, []);
   return (
     <Layout
-      title={`${siteConfig.title} | Model-driven Form Library for React`}
-      description="Model-driven library for quickly building high-performance forms in React."
+      title={`${siteConfig.title} | Share Functionality for Laravel Apps`}
+      description="Share Functionality for Laravel Apps"
     >
       <Head>
         <meta
