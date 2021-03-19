@@ -6,6 +6,8 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import Head from "@docusaurus/Head";
+import CookieConsent from "react-cookie-consent";
+import { useHistory } from "react-router-dom";
 
 const SVGs = {
   NativeBase: (
@@ -36,14 +38,14 @@ const SVGs = {
                   id="Path-2"
                   d="M0,31.548,54.61,0l54.166,31.646V94.3L54.61,126.29,0,94.2Z"
                   fill="#2ec990"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 />
                 <path
                   id="Path-5"
                   d="M200.289,174l44.843,24.518V225.4l-24.049,14.208L181,214.773,194.024,174Z"
                   transform="translate(-136.355 -131.081)"
                   fill="#1a8f64"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 />
                 <path
                   id="Path-2-Copy"
@@ -51,15 +53,15 @@ const SVGs = {
                   transform="translate(-20.717 -25.388)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="5"
-                  fill-rule="evenodd"
+                  strokeWidth="5"
+                  fillRule="evenodd"
                 />
                 <path
                   id="Path-3"
                   d="M79,225.984l26.121,12.876L113.779,214l-11.667-4Z"
                   transform="translate(-59.514 -158.201)"
                   fill="#1a8f64"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 />
                 <path
                   id="_x3C__x2F__x3E_"
@@ -87,7 +89,7 @@ const SVGs = {
         id="Rectangle"
         d="M11.616,0H98.524A11.623,11.623,0,0,1,110.14,11.616V98.524A11.623,11.623,0,0,1,98.524,110.14H11.616A11.623,11.623,0,0,1,0,98.524V11.616A11.623,11.623,0,0,1,11.616,0Z"
         fill="#78468e"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       />
       <path
         id="Path_1"
@@ -191,7 +193,7 @@ const SVGs = {
       </g>
     </svg>
   ),
-  "High-performance": (
+  Restrictions: (
     <svg
       id="high"
       xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +250,7 @@ const SVGs = {
       />
     </svg>
   ),
-  "Out of the box": (
+  Notifications: (
     <svg
       id="outofbox"
       xmlns="http://www.w3.org/2000/svg"
@@ -307,7 +309,7 @@ const SVGs = {
       />
     </svg>
   ),
-  "Easy on the bundle": (
+  Searchable: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="96"
@@ -461,20 +463,20 @@ const SVGs = {
 
 const features = [
   {
-    title: "High-performance",
-    description: <> MST-based, making it fast and powerful</>,
+    title: "Restrictions",
+    description: <> Restrict only certain entities to be shareable</>,
   },
   {
     title: "Middleware",
-    description: <>Use middleware to intercept and manipulate input</>,
+    description: <>Add your own custom middlewares</>,
   },
   {
-    title: "Out of the box",
-    description: <>Get various validations for fields right out of the box</>,
+    title: "Notifications",
+    description: <>Send Notifications when User's access gets changed</>,
   },
   {
-    title: "Easy on the bundle",
-    description: <>1.7KB, that's all</>,
+    title: "Searchable",
+    description: <>Provide your own list of users based on search query</>,
   },
 ];
 
@@ -596,19 +598,25 @@ const introSvg = (
     </g>
   </svg>
 );
-
 function Home() {
   const context = useDocusaurusContext();
+  let history = useHistory();
   const { siteConfig = {} } = context;
   const [starCount, setStarCount] = React.useState(0);
   const [contributors, setContributors] = React.useState([]);
 
   function fetchOtherContributors() {
-    let vidhi = {
-      id: 47877976,
-      login: "vidhi499",
-      avatar_url: "https://avatars.githubusercontent.com/u/47877976?v=4",
-      html_url: "https://github.com/vidhi499",
+    let aditya = {
+      id: 1733435,
+      login: "Ajamuar",
+      avatar_url: "https://avatars.githubusercontent.com/u/48080578?v=4",
+      html_url: "https://github.com/Ajamuar",
+    };
+    let madhav = {
+      id: 1733438,
+      login: "madhav23bansal",
+      avatar_url: "https://avatars.githubusercontent.com/u/52946553?v=4",
+      html_url: "https://github.com/madhav23bansal",
     };
     let sanket = {
       id: 1733433,
@@ -622,15 +630,15 @@ function Home() {
       avatar_url: "https://avatars.githubusercontent.com/u/19682624?v=4",
       html_url: "https://github.com/gauravguha",
     };
-    return [sanket, vidhi, gaurav];
+    return [aditya, madhav, sanket, gaurav];
   }
 
   function fetchContributorsData() {
     let websiteContributors = fetch(
-      "https://api.github.com/repos/geekyants/formst-website/contributors"
+      "https://api.github.com/repos/geekyants/laravel-inertia-share-dialog/contributors"
     );
     let mainRepoContributors = fetch(
-      "https://api.github.com/repos/formstjs/formst/contributors"
+      "https://api.github.com/repos/geekyants/laravel-inertia-share-dialog/contributors"
     );
 
     Promise.all([websiteContributors, mainRepoContributors])
@@ -673,16 +681,15 @@ function Home() {
   }
 
   React.useEffect(() => {
-    fetch("https://api.github.com/repos/formstjs/formst")
+    fetch("https://api.github.com/repos/GeekyAnts/laravel-inertia-share-dialog")
       .then((response) => response.json())
       .then((data) => setStarCount(data.stargazers_count));
-
     fetchContributorsData();
   }, []);
   return (
     <Layout
-      title={`${siteConfig.title} | Model-driven Form Library for React`}
-      description="Model-driven library for quickly building high-performance forms in React."
+      title={`${siteConfig.title} | Share Functionality for Laravel Apps`}
+      description="Share Functionality for Laravel Apps"
     >
       <Head>
         <meta
@@ -715,20 +722,13 @@ function Home() {
           <div className="row">
             <div className="col col--7 ">
               <h1 className="hero__title hero__title--left">
-                Model-driven Form Library <br />
-                for React
+                Share Functionality
+                <br />
+                for Laravel Apps
               </h1>
               <p className="hero__subtitle hero__subtitle--left">
-                Based on{" "}
-                <a
-                  href="https://mobx-state-tree.js.org/intro/welcome"
-                  target="__blank"
-                  className="text-white hover-text-white"
-                  style={{ fontWeight: 700 }}
-                >
-                  MobX-State-Tree
-                </a>{" "}
-                to validate <br />& structure forms in React
+                An open source library which enables you to allows other users
+                to read or write your project's entities.
               </p>
               <div className={styles.buttons}>
                 <Link
@@ -742,7 +742,7 @@ function Home() {
                 </Link>
 
                 <a
-                  href="https://github.com/formstjs/formst"
+                  href="https://github.com/GeekyAnts/laravel-inertia-share-dialog"
                   target="_blank"
                   style={{ textDecorationLine: "none" }}
                 >
@@ -769,7 +769,7 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <h1 className="hero__title  text--center feature_section_padding">
-                Why Formst?
+                Why ShareDialog?
               </h1>
               <div className="row">
                 {features.map((props, idx) => (
@@ -781,46 +781,7 @@ function Home() {
         )}
         <section className={styles.exampleSection}>
           <div className="container text--center">
-            <div className={styles.exampleWrapper}>
-              <h3 className="hero__title">Login Form Example</h3>
-              <div className={styles.exampleDescription}>
-                <p>
-                  Let's take a quick look at Formst in action. This is a simple
-                  login form with two inputs that are validated on submission.
-                  It can also display specific error messages for invalid input
-                  values.
-                </p>
-              </div>
-            </div>
-
-            <iframe
-              src="https://codesandbox.io/embed/formst-demo-ffw8v?fontsize=14&hidenavigation=1&theme=dark"
-              width="100%"
-              height="600"
-              frameBorder="0"
-              title="formst-demo"
-              allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-              sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-            ></iframe>
-          </div>
-        </section>
-        <section className={styles.talkSection}>
-          <div className="container text--center">
-            <div className={styles.exampleWrapper}>
-              <h3 className="hero__title">
-                Watch the talk at React Native Bangalore
-              </h3>
-            </div>
-
-            <iframe
-              width="62%"
-              height="420"
-              className={styles.talkVideo}
-              src="https://www.youtube.com/embed/339nm9QyHWc?start=5119"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <img src="img/share-dialog.gif"></img>
           </div>
         </section>
         <section className={styles.products}>
@@ -860,6 +821,20 @@ function Home() {
           </div>
         </section>
       </main>
+      <CookieConsent
+        children="passi"
+        buttonText="I understand"
+        enableDeclineButton
+        setDeclineCookie={false}
+        declineButtonText="Learn More"
+        onDecline={() => {
+          history.push("/cookie-policy");
+        }}
+      >
+        We use our own and third-party cookies and other tracking technologies,
+        by continuing to browse the website, you accept our use of cookies and
+        tracking technologiesss.
+      </CookieConsent>
     </Layout>
   );
 }

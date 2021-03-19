@@ -1,17 +1,17 @@
 module.exports = {
-  title: "Formst",
-  tagline: "Model-driven Form Library for React",
-  url: "https://formstjs.github.io",
+  title: "ShareDialog",
+  tagline: "Share Functionality for Laravel Apps",
+  url: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon-light.png",
   organizationName: "geekyants", // Usually your GitHub org/user name.
-  projectName: "formst", // Usually your repo name.
+  projectName: "ShareDialog", // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
-      title: "Formst",
+      title: "Share Dialog",
       logo: {
         alt: "Formst Logo",
         src: "/img/favicon-light.png",
@@ -25,7 +25,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/formstjs/formst",
+          href: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
           label: "GitHub",
           target: "_blank",
           position: "right",
@@ -46,7 +46,28 @@ module.exports = {
           items: [
             {
               label: "Getting Started",
-              to: "docs/gettingStarted",
+              to: "docs/",
+            },
+            {
+              label: "Customizations",
+              to: "docs/basic",
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "Twitter",
+              href: "https://twitter.com/geekyants",
+            },
+            {
+              label: "StackOverflow",
+              href: "https://geekyants.com/",
+            },
+            {
+              label: "Discord",
+              href: "https://geekyants.com/",
             },
           ],
         },
@@ -55,12 +76,12 @@ module.exports = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/formstjs/formst",
+              href: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
             },
             {
               label: "Contribution Guidelines",
               href:
-                "https://github.com/formstjs/formst/blob/master/CONTRIBUTING.md",
+                "https://github.com/GeekyAnts/laravel-inertia-share-dialog/blob/master/CONTRIBUTING.md",
             },
           ],
         },
@@ -75,6 +96,7 @@ module.exports = {
           ],
         },
       ],
+      copyright: `Copyright © ${new Date().getFullYear()} Share-Dialog`,
     },
   },
   presets: [

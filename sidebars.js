@@ -9,13 +9,7 @@
 
 module.exports = {
   someSidebar: {
-    Basics: ["idea", "gettingStarted", "validation", "nested", "middleware"],
-    APIs: [
-      "createFormModel",
-      "formst",
-      "field",
-      "errorMessage",
-      "defineValidators",
-    ],
+    "Getting Started": ["idea", "installation", "Usage"],
+    Customizations: ["basic", "listeners", "searchable"],
   },
 };
