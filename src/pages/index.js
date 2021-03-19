@@ -606,6 +606,18 @@ function Home() {
   const [contributors, setContributors] = React.useState([]);
 
   function fetchOtherContributors() {
+    let aditya = {
+      id: 1733435,
+      login: "Ajamuar",
+      avatar_url: "https://avatars.githubusercontent.com/u/48080578?v=4",
+      html_url: "https://github.com/Ajamuar",
+    };
+    let madhav = {
+      id: 1733438,
+      login: "madhav23bansal",
+      avatar_url: "https://avatars.githubusercontent.com/u/52946553?v=4",
+      html_url: "https://github.com/madhav23bansal",
+    };
     let sanket = {
       id: 1733433,
       login: "sanketsahu",
@@ -618,7 +630,7 @@ function Home() {
       avatar_url: "https://avatars.githubusercontent.com/u/19682624?v=4",
       html_url: "https://github.com/gauravguha",
     };
-    return [sanket, gaurav];
+    return [aditya, madhav, sanket, gaurav];
   }
 
   function fetchContributorsData() {
@@ -808,22 +820,21 @@ function Home() {
             </ul>
           </div>
         </section>
-
-        <CookieConsent
-          children="passi"
-          buttonText="I understand"
-          enableDeclineButton
-          setDeclineCookie={false}
-          declineButtonText="Learn More"
-          onDecline={() => {
-            history.push("/cookie-policy");
-          }}
-        >
-          We use our own and third-party cookies and other tracking
-          technologies, by continuing to browse the website, you accept our use
-          of cookies and tracking technologiesss.
-        </CookieConsent>
       </main>
+      <CookieConsent
+        children="passi"
+        buttonText="I understand"
+        enableDeclineButton
+        setDeclineCookie={false}
+        declineButtonText="Learn More"
+        onDecline={() => {
+          history.push("/cookie-policy");
+        }}
+      >
+        We use our own and third-party cookies and other tracking technologies,
+        by continuing to browse the website, you accept our use of cookies and
+        tracking technologiesss.
+      </CookieConsent>
     </Layout>
   );
 }

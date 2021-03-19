@@ -192,3 +192,14 @@ html[data-theme="dark"] .navbar__link--active {
   margin: 0;
   margin-left: 3px;
 }
+.cookie-policy {
+  background: var(--ifm-color-primary-dark);
+  color: white;
+  width: 70%;
+  padding: 40px;
+  text-align: left;
+  font-size: 14px;
+}
+html[data-theme="dark"] .cookie-policy {
+  background: rgb(25, 26, 27);
+}

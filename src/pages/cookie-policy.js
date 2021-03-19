@@ -18,14 +18,7 @@ const CookiePolicy = () => {
       description="Share Functionality for Laravel Apps"
     >
       <div style={styles}>
-        <div
-          style={{
-            width: "70%",
-            padding: "20px",
-            background: "#093145",
-            color: "white",
-          }}
-        >
+        <div className="cookie-policy">
           SahuSoft UK Ltd. and affiliates (collectively, “Geekyants”, “us” or
           “we”) understand that your privacy is important to you and are
           committed to being transparent about the technologies it uses. This

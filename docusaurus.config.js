@@ -59,7 +59,7 @@ module.exports = {
           items: [
             {
               label: "Twitter",
-              href: "https://geekyants.com/",
+              href: "https://twitter.com/geekyants",
             },
             {
               label: "StackOverflow",
@@ -80,7 +80,8 @@ module.exports = {
             },
             {
               label: "Contribution Guidelines",
-              href: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
+              href:
+                "https://github.com/GeekyAnts/laravel-inertia-share-dialog/blob/master/CONTRIBUTING.md",
             },
           ],
         },
