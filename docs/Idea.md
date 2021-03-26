@@ -7,7 +7,7 @@ slug: /
 
 ## Introduction
 
-**ShareDialog** is a composer package for Laravel projects which allows other users to read or write your project's entities.
+**Sharedo** is a composer package for Laravel projects which allows other users to read or write your project's entities.
 
 It helps you manage roles and permissions in an app by using Eloquent Models. You can assign read or write permissions to a user and remove permissions as required.
 

@@ -5,7 +5,7 @@ sidebar_label: Notifications
 slug: /listeners
 ---
 
-You can also send email notifications to users when they are given access to an entity. ShareDialog fires an `UserAbilityChanged` event when the user's access gets changed and attaches the `SendUserAbilityChangedNotification` listener to it. If you want to send an email notification, then add the following in EventServiceProvider:
+You can also send email notifications to users when they are given access to an entity. Sharedo fires an `UserAbilityChanged` event when the user's access gets changed and attaches the `SendUserAbilityChangedNotification` listener to it. If you want to send an email notification, then add the following in EventServiceProvider:
 
 ```jsx
 use Geekyants\ShareDialog\Events\UserAbilityChanged;

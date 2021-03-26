@@ -147,6 +147,7 @@ html[data-theme="dark"] .navbar__link--active {
 }
 .feature_section_padding {
   padding-bottom: 4rem !important;
+  padding-top: 4rem !important;
 }
 @media screen and (max-width: 966px) {
   .hero__title {
@@ -193,7 +194,7 @@ html[data-theme="dark"] .navbar__link--active {
   margin-left: 3px;
 }
 .cookie-policy {
-  background: var(--ifm-color-primary-dark);
+  background: rgb(25, 26, 27);
   color: white;
   width: 70%;
   padding: 40px;
@@ -202,4 +203,18 @@ html[data-theme="dark"] .navbar__link--active {
 }
 html[data-theme="dark"] .cookie-policy {
   background: rgb(25, 26, 27);
+}
+
+/* .declineButton {
+  font-size: 12px;
+  background: #191919e6;
+  color: white;
+  padding: 5px 8px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  border-color: #6faf98;
+} */
+
+html[data-theme="light"] .logoSection {
+  background-color: var(--ifm-color-primary);
 }
