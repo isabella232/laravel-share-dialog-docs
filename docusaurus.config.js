@@ -1,5 +1,5 @@
 module.exports = {
-  title: "ShareDialog",
+  title: "Sharedo",
   tagline: "Share Functionality for Laravel Apps",
   url: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
   baseUrl: "/",
@@ -7,16 +7,11 @@ module.exports = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon-light.png",
   organizationName: "geekyants", // Usually your GitHub org/user name.
-  projectName: "ShareDialog", // Usually your repo name.
+  projectName: "Sharedo", // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
-      title: "Share Dialog",
-      logo: {
-        alt: "Formst Logo",
-        src: "/img/favicon-light.png",
-        srcDark: "/img/favicon-dark.png",
-      },
+      title: "Sharedo",
       items: [
         {
           to: "docs/",
@@ -96,7 +91,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Share-Dialog`,
+      copyright: `Copyright © ${new Date().getFullYear()} Sharedo`,
     },
   },
   presets: [

@@ -13,7 +13,7 @@ To share your entity with other users visit:
 {APP_URL}/share-dialog/{entity_name}/{entity_id}
 ```
 
-For example, to open a share dialog for your project model with id 123, visit:
+For example, to open a Sharedo for your project model with id 123, visit:
 
 ```
 {APP_URL}/share-dialog/projects/123
