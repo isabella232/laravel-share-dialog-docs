@@ -19,3 +19,12 @@ This package aims to solve the problem and enables you to share your project's e
 ## Philosophy
 
 This package makes use of [InertiaJs](https://inertiajs.com/) for the data flow between backend and frontend without writing any API's and [Bouncer](https://github.com/JosephSilber/bouncer) to assign abilites and permissions to other users.
+
+## Use Cases
+
+You can install this package in any laravel project but make sure you have installed Tailwind and Bouncer pre-installed.
+
+## When not to use
+
+Sharedo was specifically built for projects where entities have a relation with the users
+If your project's entites are independent of the users then this package is of no use.
