@@ -11,5 +11,6 @@ module.exports = {
   someSidebar: {
     "Getting Started": ["idea", "installation", "Usage"],
     Customizations: ["basic", "listeners", "searchable"],
+    FAQ: ["faq"],
   },
 };
