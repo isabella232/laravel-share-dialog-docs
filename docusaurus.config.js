@@ -5,13 +5,17 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon-light.png",
+  favicon: "img/favicon.png",
   organizationName: "geekyants", // Usually your GitHub org/user name.
   projectName: "Sharedo", // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
-      title: "Sharedo",
+      logo: {
+        alt: "Formst Logo",
+        src: "/img/sharedo-logo.svg",
+        srcDark: "/img/sharedo-logo-dark.svg",
+      },
       items: [
         {
           to: "docs/",

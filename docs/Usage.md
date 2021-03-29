@@ -28,3 +28,5 @@ If you invite a user who is not present in your database, share-dialog automatic
 This can be useful if you want to differentiate between users created by share-dialog and users created by the normal sign-up flow.
 
 To restrict other users from accessing your entities, you have to explicitly use the Bouncer methods [here](https://github.com/JosephSilber/bouncer#cheat-sheet).
+
+> `Note: Uses who are given write access to the entity can also share that entity with other users.`
