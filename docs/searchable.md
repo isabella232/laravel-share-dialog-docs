@@ -5,7 +5,7 @@ sidebar_label: Searchable
 slug: /searchable
 ---
 
-If you want to provide an option to search users in the share-dialog then you can create a class that implements `UserContactsInterface.php` from the package and define the `getUserContacts` function.
+If you want to provide an option to search users then you can create a class that implements `UserContactsInterface.php` from the package and define the `getUserContacts` function.
 
 The return type of the `getUserContacts` function should be a string containing the JSON representation of an array of objects where each object denoting a user must have an `"email"` attribute.
 
@@ -25,7 +25,7 @@ For example, you can create a class as `SendUserContacts` which implements `User
 namespace App\Repository;
 
 use App\Models\User;
-use Geekyants\ShareDialog\Interfaces\UserContactsInerface;
+use Geekyants\Sharedo\Interfaces\UserContactsInerface;
 
 class SendUserContacts implements UserContactsInerface
 {
@@ -39,7 +39,7 @@ class SendUserContacts implements UserContactsInerface
 }
 ```
 
-In share-dialog.config file set the `"typehead"` key to the `SendUserContacts` class path:
+In sharedo.config file set the `"typehead"` key to the `SendUserContacts` class path:
 
 ```php
 "typehead" => "App\Repository\SendUserContacts"

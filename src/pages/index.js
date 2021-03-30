@@ -676,10 +676,10 @@ function Home() {
 
   function fetchContributorsData() {
     let websiteContributors = fetch(
-      "https://api.github.com/repos/geekyants/laravel-inertia-share-dialog/contributors"
+      "https://api.github.com/repos/geekyants/laravel-inertia-sharedo/contributors"
     );
     let mainRepoContributors = fetch(
-      "https://api.github.com/repos/geekyants/laravel-inertia-share-dialog/contributors"
+      "https://api.github.com/repos/geekyants/laravel-inertia-sharedo/contributors"
     );
 
     Promise.all([websiteContributors, mainRepoContributors])
@@ -722,7 +722,7 @@ function Home() {
   }
 
   React.useEffect(() => {
-    fetch("https://api.github.com/repos/GeekyAnts/laravel-inertia-share-dialog")
+    fetch("https://api.github.com/repos/GeekyAnts/laravel-inertia-sharedo")
       .then((response) => response.json())
       .then((data) => setStarCount(data.stargazers_count));
     fetchContributorsData();
@@ -783,7 +783,7 @@ function Home() {
                 </Link>
 
                 <a
-                  href="https://github.com/GeekyAnts/laravel-inertia-share-dialog"
+                  href="https://github.com/GeekyAnts/laravel-inertia-sharedo"
                   target="_blank"
                   style={{ textDecorationLine: "none" }}
                 >
