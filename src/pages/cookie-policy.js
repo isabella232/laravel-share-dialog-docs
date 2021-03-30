@@ -12,8 +12,8 @@ const CookiePolicy = () => {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`${siteConfig.title} | Share Functionality for Laravel Apps`}
-      description="Share Functionality for Laravel Apps"
+      title={`${siteConfig.title} | Share Popup for Laravel Apps`}
+      description="Share Popup for Laravel Apps"
     >
       <div style={styles}>
         <div className="cookie-policy">
