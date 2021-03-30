@@ -1,7 +1,7 @@
 module.exports = {
   title: "Sharedo",
   tagline: "Share Popup for Laravel Apps",
-  url: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
+  url: "https://github.com/GeekyAnts/laravel-inertia-sharedo",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -27,7 +27,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
+          href: "https://github.com/GeekyAnts/laravel-inertia-sharedo",
           label: "GitHub",
           target: "_blank",
           position: "right",
@@ -78,12 +78,12 @@ module.exports = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
+              href: "https://github.com/GeekyAnts/laravel-inertia-sharedo",
             },
             {
               label: "Contribution Guidelines",
               href:
-                "https://github.com/GeekyAnts/laravel-inertia-share-dialog/blob/master/CONTRIBUTING.md",
+                "https://github.com/GeekyAnts/laravel-inertia-sharedo/blob/master/CONTRIBUTING.md",
             },
           ],
         },
