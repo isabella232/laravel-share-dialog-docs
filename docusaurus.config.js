@@ -1,6 +1,6 @@
 module.exports = {
   title: "Sharedo",
-  tagline: "Share Functionality for Laravel Apps",
+  tagline: "Share Popup for Laravel Apps",
   url: "https://github.com/GeekyAnts/laravel-inertia-share-dialog",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -9,6 +9,9 @@ module.exports = {
   organizationName: "geekyants", // Usually your GitHub org/user name.
   projectName: "Sharedo", // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: "dark",
+    },
     sidebarCollapsible: false,
     navbar: {
       logo: {
