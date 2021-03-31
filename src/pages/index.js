@@ -678,28 +678,19 @@ function Home() {
       <Head>
         <meta
           name="keywords"
-          content="React, JavaScript, Open Source, OSS, JS Library, Form, Forms, MST, MobX-State-Tree, Flat Form, Stepper Form, Nested Form"
+          content="Larvael, Vuejs, Open Source, OSS, JS Library, Inertia, Inertiajs"
         />
-        <meta property="og:url" content="https://formst.geekyants.com/" />
-        <meta property="og:title" content="Formst" />
+        <meta property="og:url" content="https://sharedo.geekyants.com/" />
+        <meta property="og:title" content="Sharedo" />
         <meta
           property="og:description"
-          content="Based on MobX-State-Tree to validate and structure forms in React"
+          content="Share Popup for Laravel Apps"
         />
-        <meta
-          name="description"
-          content="Based on MobX-State-Tree to validate and structure forms in React"
-        />
-        <meta property="og:site_name" content="Formst" />
-        <meta name="twitter:image:alt" content="Formst Library" />
-        <meta
-          property="og:image"
-          content="https://formst.geekyants.com/img/og-icon.png"
-        ></meta>
-        <meta
-          name="twitter:image"
-          content="https://formst.geekyants.com/img/og-icon.png"
-        ></meta>
+        <meta name="description" content="Share Popup for Laravel Apps" />
+        <meta property="og:site_name" content="Sharedo" />
+        <meta name="twitter:image:alt" content="Sharedo" />
+        <meta property="og:image" content=""></meta>
+        <meta name="twitter:image" content=""></meta>
       </Head>
       <header
         className={clsx("hero hero--primary ", styles.heroBanner)}
