@@ -34,7 +34,7 @@ module.exports = {
         },
         {
           href:
-            "https://geekyants.com/hire?utm_source=Landing_Page&utm_medium=Hire_Us&utm_campaign=Formst",
+            "https://geekyants.com/hire?utm_source=Landing_Page&utm_medium=Hire_us&utm_campaign=Sharedo",
           label: "Hire Us",
           position: "right",
         },
@@ -93,7 +93,7 @@ module.exports = {
             {
               label: "Built with ❤️ at GeekyAnts ",
               href:
-                "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Built_with_love&utm_campaign=Formst",
+                "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Built_with_love&utm_campaign=Sharedo",
             },
           ],
         },
