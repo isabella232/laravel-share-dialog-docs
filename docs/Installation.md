@@ -45,7 +45,7 @@ module.exports = {
 
 ### 2) **Bouncer**
 
-Install Bouncer using composer:
+Install Bouncer with composer:
 
 ```jsx
 composer require silber/bouncer v1.0.0-rc.10
@@ -62,7 +62,7 @@ class User extends Model
 }
 ```
 
-Run this command to publish the Bouncer's migrations to your app's migrations directory:
+Publish Bouncer's migrations to your app's migrations directory by running the following command:
 
 ```jsx
 php artisan vendor:publish --tag="bouncer.migrations"
@@ -70,7 +70,7 @@ php artisan vendor:publish --tag="bouncer.migrations"
 
 ## **Installation**
 
-1. Install share-dialog package with composer as shown below:
+1. Install sharedo package with composer as shown below:
 
    ```jsx
    composer require geekyants/sharedo
@@ -88,9 +88,9 @@ php artisan vendor:publish --tag="bouncer.migrations"
    php artisan ui sharedo
    ```
 
-   A Sharedo folder containing Vue.js components will be created in your resources directory. You can now easily customise your sharedo's Vuejs components 🚀
+   A **Sharedo** folder containing Vue.js components will get created in your resources directory. Now, you can easily customize your Sharedo's Vue.js components 🚀
 
-4. Now, run the migrations. After executing this command, Bouncer migrations and and the `new_users_sharedo` table will be migrated:
+4. Now, run the migrations. After executing this command, Bouncer migrations and **new_users_sharedo** table will be migrated:
 
    ```jsx
    php artisan migrate
@@ -103,12 +103,12 @@ php artisan vendor:publish --tag="bouncer.migrations"
    .vue()
    ```
 
-   Note: If your css is not compiled in your app.css file, you can change it in the sharedo.blade.php file.
+   > Note: If your css is not compiled in your app.css file, you can change it in the sharedo.blade.php file.
 
 6. Install the dependencies:
 
    ```jsx
-   composer update
+   composer install
    ```
 
    ```
@@ -120,7 +120,3 @@ php artisan vendor:publish --tag="bouncer.migrations"
    ```jsx
    npm run dev
    ```
-
-```
-
-```
