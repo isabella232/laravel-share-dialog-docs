@@ -18,7 +18,6 @@ module.exports = {
         alt: "Formst Logo",
         src: "/img/sharedo-logo.svg",
         srcDark: "/img/sharedo-logo-dark.svg",
-        className: "navbar",
       },
       items: [
         {
@@ -35,7 +34,7 @@ module.exports = {
         },
         {
           href:
-            "https://geekyants.com/hire?utm_source=Landing_Page&utm_medium=Hire_us&utm_campaign=Sharedo",
+            "https://geekyants.com/hire?utm_source=Landing_Page&utm_medium=Hire_Us&utm_campaign=Formst",
           label: "Hire Us",
           position: "right",
         },
@@ -94,7 +93,7 @@ module.exports = {
             {
               label: "Built with ❤️ at GeekyAnts ",
               href:
-                "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Built_with_love&utm_campaign=Sharedo",
+                "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Built_with_love&utm_campaign=Formst",
             },
           ],
         },
