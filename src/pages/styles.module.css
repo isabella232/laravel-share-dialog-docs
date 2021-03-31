@@ -11,7 +11,9 @@
   position: relative;
   overflow: hidden;
 }
-
+html[data-theme="light"] header {
+  background-color: white !important;
+}
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
@@ -44,6 +46,7 @@
 }
 
 .exampleWrapper {
+  padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
 }
@@ -56,7 +59,11 @@
 .talkSection,
 .exampleSection,
 .creatorSection {
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+
+html[data-theme="light"] .creatorSection {
+  background: #efefef;
 }
 .contributorList {
   display: flex;
@@ -72,8 +79,12 @@
 }
 
 .getStarted {
-  color: #534ce9 !important;
-  background-color: #ffffff !important;
+  color: white !important;
+  background-color: #eb5b49 !important;
+}
+html[data-theme="dark"] .getStarted {
+  background-color: white !important;
+  color: black !important;
 }
 
 @media only screen and (max-width: 768px) {
