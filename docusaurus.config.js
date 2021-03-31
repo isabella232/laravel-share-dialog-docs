@@ -19,6 +19,7 @@ module.exports = {
         src: "/img/sharedo-logo.svg",
         srcDark: "/img/sharedo-logo-dark.svg",
       },
+      className: "navbar",
       items: [
         {
           to: "docs/",
