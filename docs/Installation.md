@@ -70,19 +70,19 @@ php artisan vendor:publish --tag="bouncer.migrations"
 
 ## **Installation**
 
-1. Install the sharedo package using composer:
+1. Install share-dialog package with composer as shown below:
 
    ```jsx
    composer require geekyants/sharedo
    ```
 
-2. Run this command to move the sharedo config file to your project's config folder:
+2. After installation, move the package's config file to your project's config folder by executing the following command:
 
    ```jsx
    php artisan vendor:publish  --tag="config"
    ```
 
-3. Scaffold the vue components present in the sharedo package into your project:
+3. Moving forward, scaffold the view components present in the sharedo package as follows:
 
    ```jsx
    php artisan ui sharedo
@@ -90,7 +90,7 @@ php artisan vendor:publish --tag="bouncer.migrations"
 
    A Sharedo folder containing Vue.js components will be created in your resources directory. You can now easily customise your sharedo's Vuejs components 🚀
 
-4. Execute this command to migrate Bouncer migrations and the new_users_sharedo table present in the package:
+4. Now, run the migrations. After executing this command, Bouncer migrations and and the `new_users_sharedo` table will be migrated:
 
    ```jsx
    php artisan migrate
@@ -109,6 +109,9 @@ php artisan vendor:publish --tag="bouncer.migrations"
 
    ```jsx
    composer update
+   ```
+
+   ```
    npm install
    ```
 
@@ -117,3 +120,7 @@ php artisan vendor:publish --tag="bouncer.migrations"
    ```jsx
    npm run dev
    ```
+
+```
+
+```

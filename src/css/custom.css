@@ -7,22 +7,25 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #534ce9;
+  --ifm-color-primary: red;
   --ifm-color-primary-dark: #4b44d2;
   --ifm-color-primary-darker: #423dba;
   --ifm-color-primary-darkest: #3a35a3;
   --ifm-color-primary-light: #645eeb;
   --ifm-color-primary-lighter: #7570ed;
   --ifm-color-primary-lightest: #8782f0;
+
   --ifm-code-font-size: 95%;
-  --ifm-navbar-link-color: white;
+  --ifm-navbar-link-color: black;
+
   --ifm-navbar-link-hover-color: darkgray;
-  --trial-color: #9d99ff;
+  --trial-color: #eb5b49;
   /* --ifm-navbar-padding-vertical */
   /* --ifm-navbar-padding-horizontal: 10rem; */
   --svg-fill-color: #21232a;
   --ifm-heading-line-height: 1.35;
-  --ifm-footer-link-hover-color: #c5c2ff;
+  --ifm-github-color: black;
+  --ifm-footer-link-hover-color: #eb5b49;
   --svg-intro-background-color: #fbfbfb;
   --svg-intro-fill-color: #534ce9;
 }
@@ -45,15 +48,15 @@
 
 .navbar {
   --ifm-link-hover-color: #fff;
-  --ifm-navbar-link-color: #fff;
+  --ifm-navbar-link-color: var(--ifm-navbar-link-color);
 }
 
 .navbar__inner {
-  --ifm-navbar-link-hover-color: #fff;
+  --ifm-navbar-link-hover-color: red;
 }
 
 .hero--primary {
-  --ifm-hero-text-color: #fff;
+  --ifm-hero-text-color: #1b2458;
 }
 
 .navbar__brand:hover {
@@ -65,6 +68,13 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme="light"] .hero__subtitle {
+  color: #99999a;
+}
+html[data-theme="dark"] .hero__subtitle {
+  color: #fff;
 }
 
 .hero__subtitle--left,
@@ -81,8 +91,10 @@ html[data-theme="dark"] {
   --ifm-link-color: var(--trial-color);
   --ifm-tabs-color-active: var(--trial-color);
   --svg-fill-color: #ffffff;
-  --ifm-footer-link-hover-color: #bcc7ef;
+  --ifm-navbar-link-color: white;
+  --ifm-footer-link-hover-color: #eb5b49;
   --svg-intro-background-color: #534ce9;
+  --ifm-github-color: white;
   --svg-intro-fill-color: #fbfbfb;
 }
 
@@ -169,13 +181,16 @@ html[data-theme="dark"] .navbar__link--active {
 }
 .githubStarsConatiner {
   height: 50px;
-  color: white;
   font-size: 15px;
   display: flex;
+  color: white;
   justify-content: space-around;
   align-items: center;
   margin-left: 20px;
   font-size: 20px;
+}
+html[data-theme="light"] .githubStarsConatiner {
+  color: black;
 }
 
 .githubStarsImage {
@@ -192,6 +207,9 @@ html[data-theme="dark"] .navbar__link--active {
   padding: 0;
   margin: 0;
   margin-left: 3px;
+}
+.starsCount {
+  margin-left: 7px;
 }
 .cookie-policy {
   color: black;
@@ -216,5 +234,9 @@ html[data-theme="dark"] .cookie-policy {
 } */
 
 html[data-theme="light"] .logoSection {
-  background-color: var(--ifm-color-primary);
+  background-color: #efefef;
+}
+
+html[data-theme="light"] .navbar {
+  background-color: white !important;
 }
