@@ -716,8 +716,8 @@ function Home() {
                 for Laravel Apps
               </h1>
               <p className="hero__subtitle hero__subtitle--left">
-                Assign read or write permissions for your project entities to
-                other users
+                <div>Assign read or write permissions</div>
+                for your project entities to other users
               </p>
               <div className={styles.buttons}>
                 <Link
