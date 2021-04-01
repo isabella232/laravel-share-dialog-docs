@@ -20,6 +20,7 @@
 
   --ifm-navbar-link-hover-color: darkgray;
   --trial-color: #eb5b49;
+  --intro-svg-color: black;
   /* --ifm-navbar-padding-vertical */
   /* --ifm-navbar-padding-horizontal: 10rem; */
   --svg-fill-color: #21232a;
@@ -96,6 +97,7 @@ html[data-theme="dark"] {
   --svg-intro-background-color: #534ce9;
   --ifm-github-color: white;
   --svg-intro-fill-color: #fbfbfb;
+  --intro-svg-color: white;
 }
 
 html[data-theme="dark"] .admonition-heading {
@@ -153,6 +155,10 @@ html[data-theme="dark"] .navbar__link--active {
 .hero__title {
   font-size: 2.8rem;
 }
+html[data-theme="light"] .hero__title {
+  color: #1b2458;
+}
+
 .intro_image {
   height: 22rem;
   object-fit: contain;
@@ -236,7 +242,9 @@ html[data-theme="dark"] .cookie-policy {
 html[data-theme="light"] .logoSection {
   background-color: #efefef;
 }
-
+.logoSection {
+  padding-bottom: 4rem;
+}
 html[data-theme="light"] .navbar {
   background-color: white !important;
 }
