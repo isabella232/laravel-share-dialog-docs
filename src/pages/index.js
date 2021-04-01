@@ -709,7 +709,7 @@ function Home() {
       >
         <div className="container">
           <div className="row">
-            <div className="col col--7">
+            <div className="col col--6">
               <h1 className="hero__title hero__title--left">
                 Share Popup
                 <br />
@@ -755,7 +755,7 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div className="col col--5 hero-image">
+            <div className="col col--6 hero-image">
               <img
                 src="img/bannerlogo.gif"
                 style={{
