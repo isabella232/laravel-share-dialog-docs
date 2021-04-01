@@ -759,7 +759,7 @@ function Home() {
               <img
                 src="img/bannerlogo.gif"
                 style={{
-                  borderRadius: "15px",
+                  borderRadius: "25px",
                   boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
                 }}
               ></img>
@@ -787,7 +787,7 @@ function Home() {
             <img
               src="img/sharedo3.gif"
               style={{
-                borderRadius: "15px",
+                borderRadius: "25px",
                 boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
               }}
             ></img>
