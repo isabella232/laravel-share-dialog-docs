@@ -689,8 +689,14 @@ function Home() {
         <meta name="description" content="Share Popup for Laravel Apps" />
         <meta property="og:site_name" content="Sharedo" />
         <meta name="twitter:image:alt" content="Sharedo" />
-        <meta property="og:image" content=""></meta>
-        <meta name="twitter:image" content=""></meta>
+        <meta
+          property="og:image"
+          content="https://sharedo.geekyants.com/img/og-icon.png"
+        ></meta>
+        <meta
+          name="twitter:image"
+          content="https://sharedo.geekyants.com/img/og-icon.png"
+        ></meta>
       </Head>
       <header
         className={clsx("hero hero--primary ", styles.heroBanner)}
