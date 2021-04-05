@@ -80,8 +80,8 @@ const SVGs = {
 
   "Vue Native": (
     <svg
-      width="110.14"
-      height="110.14"
+      width="129"
+      height="129"
       viewBox="0 0 512 512"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
