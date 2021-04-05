@@ -23,7 +23,7 @@ For example, if you want to open Sharedo for a project model with id 123, then v
 
 > Note: **Sharedo sends error messages back to your application in the error props.**
 
-If you invite a user who is not present in your database, Sharedo automatically creates it in your users table. Also, a new entry is inserted into the `new_users_sharedo table` referencing the user's id as a foreign key and `has_ever_logged_in` property is set to false.  
+If you invite a user who is not present in your database, Sharedo automatically creates it in your users table. Also, a new entry is inserted into the **new_users_sharedo table** referencing the user's id as a foreign key and **has_ever_logged_in** property is set to false.  
 This can help you differentiate between the users created by Sharedo and users created by the usual sign-up flow.
 
 To restrict other users from accessing your entities, you have to explicitly use the Bouncer methods [here](https://github.com/JosephSilber/bouncer#cheat-sheet).
