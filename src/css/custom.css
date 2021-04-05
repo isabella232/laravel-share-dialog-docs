@@ -34,6 +34,7 @@
 .navbar-sidebar__brand {
   background-color: var(--ifm-color-primary);
 }
+
 .navbar__toggle {
   color: white;
 }
@@ -51,7 +52,12 @@
   --ifm-link-hover-color: #fff;
   --ifm-navbar-link-color: var(--ifm-navbar-link-color);
 }
-
+html[data-theme="light"] .navbar-sidebar__brand {
+  background-color: #fff;
+}
+html[data-theme="light"] .navbar__toggle {
+  color: black;
+}
 .navbar__inner {
   --ifm-navbar-link-hover-color: red;
 }
