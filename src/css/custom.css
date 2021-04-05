@@ -249,3 +249,6 @@ html[data-theme="light"] .logoSection {
 html[data-theme="light"] .navbar {
   background-color: white !important;
 }
+.blue-color {
+  color: #7c3aed;
+}
