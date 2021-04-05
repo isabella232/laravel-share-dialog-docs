@@ -680,7 +680,6 @@ function Home() {
           property="og:description"
           content="Share Popup for Laravel Apps. Assign read or write permissions for your project entities to other users."
         />
-        <meta name="description" content="Share Popup for Laravel Apps" />
         <meta property="og:site_name" content="Sharedo" />
         <meta
           name="twitter:image:alt"
@@ -688,11 +687,11 @@ function Home() {
         />
         <meta
           property="og:image"
-          content="https://sharedo.geekyants.com/img/og-icon.png"
+          content="https://sharedo.geekyants.com/img/og-image.png"
         ></meta>
         <meta
-          name="twitter:image"
-          content="https://sharedo.geekyants.com/img/og-icon.png"
+          name="twitter:card"
+          content="https://sharedo.geekyants.com/img/og-image.png"
         ></meta>
       </Head>
       <header

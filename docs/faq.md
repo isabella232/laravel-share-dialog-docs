@@ -1,7 +1,7 @@
 ---
 id: faq
-title: FAQ's
-sidebar_label: FAQ's
+title: FAQ
+sidebar_label: FAQ
 slug: /faq
 ---
 
@@ -17,5 +17,5 @@ Sharedo was specifically built for projects where entities have a relation with 
 
 Security is ensured by the following:
 
-- User can apply restrictions through authorization.
-- Only specific entites can become shareable via middleware.
+- Users can apply restrictions through authorisation
+- Only specific entities can be made shareable via middleware
