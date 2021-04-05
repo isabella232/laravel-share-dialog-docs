@@ -243,6 +243,7 @@ html[data-theme="light"] .logoSection {
   background-color: #efefef;
 }
 .logoSection {
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 html[data-theme="light"] .navbar {
