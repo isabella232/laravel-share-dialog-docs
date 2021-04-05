@@ -9,7 +9,7 @@ slug: /installation
 
 If you have [Tailwind](https://tailwindcss.com/) and [Bouncer](https://github.com/JosephSilber/bouncer) pre-installed, you can move on to the [Installation](#installation) section.
 
-### 1) **Tailwind**
+### 1) **Tailwind Installation**
 
 Install Tailwind as shown below:
 
@@ -74,7 +74,7 @@ Next, import your stylesheet in your main Blade layout (commonly `resources/view
   <!-- ... --->
 ```
 
-### 2) **Bouncer**
+### 2) **Bouncer Installation**
 
 Install Bouncer with composer:
 
