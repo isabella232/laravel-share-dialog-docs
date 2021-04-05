@@ -790,7 +790,7 @@ function Home() {
               </div>
               <div style={{ padding: "40px" }}>
                 <img
-                  src="img/sharedo3.gif"
+                  src="img/sharedo.gif"
                   style={{
                     borderRadius: "25px",
 
@@ -800,16 +800,6 @@ function Home() {
               </div>
             </div>
           </div>
-          {/* <div className="container text--center">
-            <img
-              src="img/sharedo3.gif"
-              style={{
-                borderRadius: "25px",
-
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-              }}
-            ></img>
-          </div> */}
         </section>
         <section className={styles.products}>
           <div className="container">
