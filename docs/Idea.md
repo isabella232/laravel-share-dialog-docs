@@ -16,4 +16,4 @@ We realised that it is very time consuming to add a share functionality to Larav
 
 ## Philosophy
 
-This package makes use of [InertiaJs](https://inertiajs.com/) for the data flow between backend and frontend without writing any API's and [Bouncer](https://github.com/JosephSilber/bouncer) to assign roles and permissions to other users.
+This package makes use of [InertiaJs](https://inertiajs.com/) for the data flow between backend and frontend without writing any APIs and [Bouncer](https://github.com/JosephSilber/bouncer) to assign roles and permissions to other users.
