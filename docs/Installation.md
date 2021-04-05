@@ -17,7 +17,7 @@ Install Tailwind as shown below:
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
-Next, generate your tailwind.config.js file:
+Next, generate your **tailwind.config.js** file:
 
 ```jsx
 npx tailwindcss init
