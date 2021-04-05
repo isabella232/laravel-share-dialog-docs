@@ -54,6 +54,10 @@ module.exports = {
               label: "Customizations",
               to: "docs/basic",
             },
+            {
+              label: "FAQ",
+              to: "docs/faq",
+            },
           ],
         },
         {
