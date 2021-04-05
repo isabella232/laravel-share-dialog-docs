@@ -68,10 +68,6 @@ module.exports = {
               href: "https://twitter.com/geekyants",
             },
             {
-              label: "StackOverflow",
-              href: "https://geekyants.com/",
-            },
-            {
               label: "Discord",
               href: "https://discord.com/invite/jpxVeDFqxG",
             },
