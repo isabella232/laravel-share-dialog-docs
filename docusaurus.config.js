@@ -15,7 +15,7 @@ module.exports = {
     sidebarCollapsible: false,
     navbar: {
       logo: {
-        alt: "Formst Logo",
+        alt: "Sharedo Logo",
         src: "/img/sharedo-logo.svg",
         srcDark: "/img/sharedo-logo-dark.svg",
       },
@@ -69,7 +69,7 @@ module.exports = {
             },
             {
               label: "Discord",
-              href: "https://geekyants.com/",
+              href: "https://discord.com/invite/jpxVeDFqxG",
             },
           ],
         },
@@ -108,7 +108,8 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/formstjs/formst-docs",
+          editUrl:
+            "https://github.com/GeekyAnts/laravel-share-dialog-docs/blob/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
