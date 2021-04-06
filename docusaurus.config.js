@@ -16,7 +16,7 @@ module.exports = {
     metadatas: [
       {
         name: "twitter:card",
-        content: "https://sharedo.geekyants.com/img/favicon.png",
+        content: "https://sharedo.geekyants.com/img/og-image.png",
       },
     ],
     sidebarCollapsible: false,
