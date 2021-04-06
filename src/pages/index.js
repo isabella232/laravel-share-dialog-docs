@@ -693,12 +693,9 @@ function Home() {
           property="og:image"
           content="https://sharedo.geekyants.com/img/og-image.png"
         ></meta>
+        <meta name="twitter:card" content="summary_large_image"></meta>
         <meta
-          name="twitter:card"
-          content="https://sharedo.geekyants.com/img/og-image.png"
-        ></meta>
-        <meta
-          name="twitter:image:src"
+          name="twitter:image"
           content="https://sharedo.geekyants.com/img/og-image.png"
         ></meta>
       </Head>
