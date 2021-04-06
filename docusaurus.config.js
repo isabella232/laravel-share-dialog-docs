@@ -12,6 +12,13 @@ module.exports = {
     colorMode: {
       defaultMode: "dark",
     },
+    image: "img/og-image.png",
+    metadatas: [
+      {
+        name: "twitter:card",
+        content: "https://sharedo.geekyants.com/img/og-image.png",
+      },
+    ],
     sidebarCollapsible: false,
     navbar: {
       logo: {
