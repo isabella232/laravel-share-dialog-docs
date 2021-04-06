@@ -674,10 +674,14 @@ function Home() {
           name="keywords"
           content="Laravel, PHP, Open Source, Open Source Library, OSS, Inertia, Vue, Share Functionality, Share Popup, JavaScript"
         />
-        <meta property="og:url" content="https://sharedo.geekyants.com" />
+        <meta property="og:url" content="https://sharedo.geekyants.com/" />
         <meta property="og:title" content="Sharedo" />
         <meta
           property="og:description"
+          content="Share Popup for Laravel Apps. Assign read or write permissions for your project entities to other users."
+        />
+        <meta
+          name="description"
           content="Share Popup for Laravel Apps. Assign read or write permissions for your project entities to other users."
         />
         <meta property="og:site_name" content="Sharedo" />
@@ -691,6 +695,10 @@ function Home() {
         ></meta>
         <meta
           name="twitter:card"
+          content="https://sharedo.geekyants.com/img/og-image.png"
+        ></meta>
+        <meta
+          name="twitter:image"
           content="https://sharedo.geekyants.com/img/og-image.png"
         ></meta>
       </Head>
@@ -751,16 +759,26 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div className="col col--7 hero-image">
+            <div class="col col--7 hero-image">
+              <img
+                class="img-rounded"
+                src="img/sharedo.gif"
+                style={{
+                  borderRadius: "15px",
+                  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                }}
+              />
+            </div>
+            {/* <div className="col col--7 hero-image">
               {introSvg}
-              {/* <img
+              <img
                 src="img/bannerlogo.gif"
                 style={{
                   borderRadius: "25px",
                   boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
                 }}
-              ></img> */}
-            </div>
+              ></img>
+            </div> */}
           </div>
         </div>
       </header>
@@ -790,7 +808,7 @@ function Home() {
               </div>
               <div style={{ padding: "40px" }}>
                 <img
-                  src="img/sharedo.gif"
+                  src="img/sharedo-banner.gif"
                   style={{
                     borderRadius: "25px",
 
