@@ -777,6 +777,13 @@ function Home() {
               ></img>
             </div> */}
           </div>
+          <div className="row pt-4 bg-primary powered-by">
+            <div class="col col--5"></div>
+            <div class="col col--7">
+              Powered by <strong>Inertia.js</strong> and{" "}
+              <strong>Laravel Bouncer</strong>
+            </div>
+          </div>
         </div>
       </header>
       <main>
@@ -799,7 +806,8 @@ function Home() {
             <div>
               <h3 className="hero__title">Sharing Made Easy</h3>
               <div className="hero__subtitle" style={{ paddingTop: "10px" }}>
-                Sharedo helps you manage roles and permissions for Laravel apps.
+                Sharedo provides you with an interface to manage roles and
+                permissions for Laravel apps with the help of Laravel Bouncer.
                 Assign read or write permissions to a user and remove them as
                 required.
               </div>

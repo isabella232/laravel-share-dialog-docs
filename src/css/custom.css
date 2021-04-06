@@ -258,3 +258,9 @@ html[data-theme="light"] .navbar {
 .blue-color {
   color: #7c3aed;
 }
+.powered-by {
+  padding-top: 2rem;
+}
+html[data-theme="dark"] .powered-by {
+  color: #fff;
+}
