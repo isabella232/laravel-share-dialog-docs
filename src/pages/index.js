@@ -698,7 +698,7 @@ function Home() {
           content="https://sharedo.geekyants.com/img/og-image.png"
         ></meta>
         <meta
-          name="twitter:image"
+          name="twitter:image:src"
           content="https://sharedo.geekyants.com/img/og-image.png"
         ></meta>
       </Head>
