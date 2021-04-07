@@ -780,8 +780,16 @@ function Home() {
           <div className="row pt-4 bg-primary powered-by">
             <div class="col col--5"></div>
             <div class="col col--7">
-              Powered by <strong>Inertia.js</strong> and{" "}
-              <strong>Laravel Bouncer</strong>
+              Powered by{" "}
+              <strong>
+                <a href="https://inertiajs.com/">Inertia.js</a>
+              </strong>{" "}
+              and{" "}
+              <strong>
+                <a href="https://github.com/JosephSilber/bouncer">
+                  Laravel Bouncer
+                </a>{" "}
+              </strong>
             </div>
           </div>
         </div>

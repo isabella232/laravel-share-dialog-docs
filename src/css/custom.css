@@ -264,3 +264,10 @@ html[data-theme="light"] .navbar {
 html[data-theme="dark"] .powered-by {
   color: #fff;
 }
+html[data-theme="dark"] .powered-by a {
+  color: #fff;
+}
+html[data-theme="light"] .powered-by a,
+.powered-by {
+  color: black;
+}
